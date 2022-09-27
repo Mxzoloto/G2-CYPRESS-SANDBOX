@@ -1,6 +1,6 @@
 ///<reference types="cypress"/>
 
-it("quering elements", () => {
+it("quering elements.", () => {
   cy.visit("http://localhost:8080/commands/querying");
 
   cy.get("#query-btn").should("contain", "Button");
@@ -16,7 +16,6 @@ it("quering elements", () => {
   cy.get(".query-form").within(() => {
     cy.get("#inputEmail").should("exist");
     cy.get("#inputPassword").should("exist");
-
     cy.get(".btn.btn-default").should("not.exist");
   });
 
