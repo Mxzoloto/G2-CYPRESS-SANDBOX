@@ -16,6 +16,7 @@ it("quering elements.", () => {
   cy.get(".query-form").within(() => {
     cy.get("#inputEmail").should("exist");
     cy.get("#inputPassword").should("exist");
+
     cy.get(".btn.btn-default").should("not.exist");
   });
 
@@ -37,3 +38,4 @@ it("commands to find elements", () => {
   cy.get(".pagination.traversal-pagination").find("a").contains("4");
 });
 //Test
+
